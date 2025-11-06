@@ -142,3 +142,61 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants section styling */
+.participants {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #e0e0e0;
+}
+
+.participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #283593;
+  letter-spacing: 0.2px;
+}
+
+
+.participant-list.no-bullets {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.participant-list li {
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  background: linear-gradient(180deg, #ffffff, #fbfbff);
+  border: 1px solid #eee;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.delete-participant:hover {
+  background: #ffebee;
+}
+
+/* Empty-state message when no participants exist */
+.participants.empty .no-participants {
+  margin: 0;
+  padding: 8px;
+  font-style: italic;
+  color: #666;
+  background-color: #fafafa;
+  border-radius: 6px;
+  border: 1px dashed #f0f0f0;
+}
