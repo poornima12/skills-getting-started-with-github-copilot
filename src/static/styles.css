@@ -157,9 +157,10 @@ footer {
   letter-spacing: 0.2px;
 }
 
-.participant-list {
-  list-style: disc;
-  padding-left: 20px;
+
+.participant-list.no-bullets {
+  list-style: none;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -171,8 +172,22 @@ footer {
   border-radius: 6px;
   font-size: 14px;
   color: #444;
-  display: list-item;
-  list-style-position: inside;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.delete-participant:hover {
+  background: #ffebee;
 }
 
 /* Empty-state message when no participants exist */
